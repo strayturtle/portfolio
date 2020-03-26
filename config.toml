@@ -35,14 +35,14 @@ googleAnalytics = "UA-161504385-2"
   url = "https://www.strayturtle.dev/"
   image = "https://blog.strayturtle.dev/apple-touch-icon.png"
   description = ""
-  usedSkills = ["HTML5", "CSS", "AMP Stories", "Hugo"]
+  usedSkills = ["HTML5", "CSS3", "AMP Stories", "Hugo"]
 
 [[params.projects]]
   name = "Blog"
   url = "https://blog.strayturtle.dev/"
   image = "https://blog.strayturtle.dev/apple-touch-icon.png"
   description = ""
-  usedSkills = ["HTML5", "CSS", "AMP", "Hugo"]
+  usedSkills = ["HTML5", "CSS3", "AMP", "Hugo"]
 
 [[params.contact]]
   name = "Twitter"
