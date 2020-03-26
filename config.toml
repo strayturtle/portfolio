@@ -15,6 +15,21 @@ googleAnalytics = "UA-161504385-2"
   location = "Kyoto, Japan"
   email = "https://forms.gle/6Rb9NHgWFd9VGiJF9"
 
+[[params.skills]]
+  name = "HTML5"
+
+[[params.skills]]
+  name = "CSS3"
+
+[[params.skills]]
+  name = "JavaScript"
+
+[[params.skills]]
+  name = "Hugo"
+
+[[params.skills]]
+  name = "PHP"
+
 [[params.projects]]
   name = "Portfolio"
   url = "https://www.strayturtle.dev/"

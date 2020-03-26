@@ -3,46 +3,18 @@
     <h1 class="title">Skills</h1>
     <p>PHPはProgateを修了したレベルです。</p>
     <div class="cardContainer">
+      {{ range .Site.Params.skills }}
+      {{ $name := .name }}
+      {{ $svgPath := lower $name | printf "svg/%s.svg" }}
       <div class="card">
         <div class="card_inner">
-          <h2 class="card_title">HTML5</h2>
-          {{ with resources.Get "svg/html5.svg" }}
+          <h2 class="card_title">{{ .name }}</h2>
+          {{ with resources.Get $svgPath }}
           {{ .Content | safeHTML }}
           {{ end }}
         </div>
       </div>
-      <div class="card">
-        <div class="card_inner">
-          <h2 class="card_title">CSS</h2>
-          {{ with resources.Get "svg/css3.svg" }}
-          {{ .Content | safeHTML }}
-          {{ end }}
-        </div>
-      </div>
-      <div class="card">
-        <div class="card_inner">
-          <h2 class="card_title">JavaScript</h2>
-          {{ with resources.Get "svg/javascript.svg" }}
-          {{ .Content | safeHTML }}
-          {{ end }}
-        </div>
-      </div>
-      <div class="card">
-        <div class="card_inner">
-          <h2 class="card_title">Hugo</h2>
-          {{ with resources.Get "svg/hugo.svg" }}
-          {{ .Content | safeHTML }}
-          {{ end }}
-        </div>
-      </div>
-      <div class="card">
-        <div class="card_inner">
-          <h2 class="card_title">PHP</h2>
-          {{ with resources.Get "svg/php.svg" }}
-          {{ .Content | safeHTML }}
-          {{ end }}
-        </div>
-      </div>
+      {{ end }}
     </div>
   </amp-story-grid-layer>
 </amp-story-page>
