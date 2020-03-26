@@ -1,0 +1,22 @@
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": [ "email", "twitter" ],
+  "components": [
+    {{ with .Site.Params.projects }}
+    {
+      "type": "heading",
+      "text": "Projects"
+    },
+    {{ range . }}
+    {
+      "type": "small",
+      "title": "{{ .name }}",
+      "url": "{{ .url }}",
+      {{ with .image }}
+      "image": "{{ . | absURL }}"
+      {{ end }}
+    },
+    {{ end }}
+    {{ end }}
+  ]
+}

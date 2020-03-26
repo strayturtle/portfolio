@@ -1,0 +1,144 @@
+amp-story-page {
+  background: linear-gradient(0deg, $color_primary, adjust-hue($color_primary, 80%));
+}
+
+amp-story-page-attachment p {
+  margin: 1rem 0;
+}
+
+// amp-story-grid-layer.bottom {
+//   align-content: end;
+// }
+
+amp-story-grid-layer.center {
+  align-content: center;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 96rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.overlay {
+  filter: opacity(.2);
+}
+
+.title {
+  letter-spacing: .1em;
+  font-size: 2rem;
+}
+
+.subtitle {
+  letter-spacing: .1em;
+  font-size: 1rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%;
+
+  &_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: .5rem;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .1);
+  }
+
+  &_title {
+    margin-bottom: .5rem;
+  }
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.project {
+  width: 50%;
+  padding: .5rem;
+
+  @include media_max {
+    width: 100%;
+  }
+
+  &_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .1);
+  }
+
+  &_title {
+    margin-bottom: .5rem;
+    color: #fff;
+  }
+
+  &_host {
+    color: rgba(255, 255, 255, .6);
+    font-size: .8rem;
+    margin-top: 1rem;
+  }
+
+  &_img {
+    border-radius: 5px;
+    margin-left: 1rem;
+  }
+
+  .usedSkills_title {
+    font-size: .8rem;
+  }
+
+  &_usedSkills {
+    font-size: .7rem;
+    margin-top: 1rem;
+    color: #fff;
+
+    .usedSkill + .usedSkill::before {
+      content: ", ";
+    }
+  }
+}
+
+.contactList {
+  font-size: 1rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem;
+    color: #fff;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

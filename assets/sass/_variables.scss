@@ -1,0 +1,19 @@
+// Fonts
+$font_family: "Noto Sans JP", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Sans Emoji" !default;
+
+// Colors
+$color_primary: #5cad5c !default;
+$color_primary_dark: darken(desaturate($color_primary, 3%), 20%) !default;
+$color_link: #0b74c7 !default;
+
+// Service Brand Colors
+$color_twitter: #1da1f2 !default;
+$color_facebook: #1877f2 !default;
+$color_line: #1dcd00 !default;
+$color_haneta: #00a5de !default;
+$color_pocket: #ef3f56 !default;
+
+// Break points
+$breakpoint_min: ("mobile": "(min-width: 481px)", "tablet": "(min-width: 769px)") !default;
+$breakpoint_max: ("mobile": "(max-width: 480px)", "tablet": "(max-width: 768px)") !default;

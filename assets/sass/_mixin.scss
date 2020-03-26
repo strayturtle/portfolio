@@ -1,0 +1,12 @@
+// メディアクエリを指定する（_variable.scssのbreak pointを参照）
+@mixin media_min($breakpoint: tablet) {
+  @media #{map-get($breakpoint_min, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin media_max($breakpoint: tablet) {
+  @media #{map-get($breakpoint_max, $breakpoint)} {
+    @content;
+  }
+}

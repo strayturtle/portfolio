@@ -1,0 +1,18 @@
+{{ define "main" }}
+<amp-story standalone supports-landscape
+    title="{{ .Site.Title }}"
+    publisher="{{ .Site.Params.author.name }}"
+    publisher-logo-src="{{ index .Site.Params.images 0 | absURL }}"
+    poster-portrait-src="{{ "assets/cover.jpg" | absURL }}">
+
+  {{ partial "analytics" . }}
+  {{ partial "cover.html" . }}
+  {{ partial "profile.html" . }}
+  {{ partial "private.html" . }}
+  {{ partial "skills.html" . }}
+  {{ partial "projects.html" . }}
+  {{ partial "contact.html" . }}
+
+  <amp-story-bookend src="{{ "bookend.json" | absURL }}" layout="nodisplay"></amp-story-bookend>
+</amp-story>
+{{ end }}
