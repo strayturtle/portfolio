@@ -48,18 +48,12 @@ amp-story-grid-layer.center {
 }
 
 .card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
   padding: 1rem;
   width: 50%;
 
   &_inner {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding: .5rem;
-    width: 100%;
     border-radius: 14px;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .1);
   }
