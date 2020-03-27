@@ -10,22 +10,23 @@
       {{ range .Site.Params.projects }}
       <a class="project" href="{{ .url | absURL }}" title="{{ .name }}">
         <div class="project_inner">
-          <header>
+          <div class="project_body">
             <h2 class="project_title">
               {{ .name }}
             </h2>
+            <p class="project_description">
+              {{ .description | safeHTML }}
+            </p>
             <div class="project_usedSkills">
-              <h3 class="usedSkills_title">使用スキル</h3>
+              <h3 class="project_usedSkills_title">使用スキル</h3>
               {{ range .usedSkills }}
-              <span class="usedSkill">{{ . }}</span>
+              <span class="project_usedSkill">{{ . }}</span>
               {{ end }}
             </div>
             <div class="project_host">
               {{ .url | replaceRE "^https?://([^/]+).*" "$1" }}
             </div>
-          </header>
-          <amp-img class="project_img" src="{{ .image | absURL }}" alt="" width="96" height="96" layout="intrinsic">
-          </amp-img>
+          </div>
         </div>
       </a>
       {{ end }}

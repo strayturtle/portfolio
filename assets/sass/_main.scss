@@ -73,6 +73,7 @@ amp-story-grid-layer.center {
 .project {
   width: 50%;
   padding: .5rem;
+  color: #fff;
 
   @include media_max {
     width: 100%;
@@ -80,42 +81,41 @@ amp-story-grid-layer.center {
 
   &_inner {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1rem;
     width: 100%;
+    height: 100%;
     border-radius: 14px;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .1);
   }
 
-  &_title {
-    margin-bottom: .5rem;
-    color: #fff;
+  &_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &_description {
+    margin-top: .5rem;
+    font-size: .8rem;
   }
 
   &_host {
     color: rgba(255, 255, 255, .6);
     font-size: .8rem;
-    margin-top: 1rem;
-  }
-
-  &_img {
-    border-radius: 5px;
-    margin-left: 1rem;
-  }
-
-  .usedSkills_title {
-    font-size: .8rem;
+    margin-top: auto;
   }
 
   &_usedSkills {
+    margin: .5rem 0;
     font-size: .7rem;
-    margin-top: 1rem;
-    color: #fff;
 
-    .usedSkill + .usedSkill::before {
-      content: ", ";
+    &_title {
+      font-size: 0.7rem;
     }
+  }
+
+  &_usedSkill + &_usedSkill::before {
+    content: ", ";
   }
 }
 

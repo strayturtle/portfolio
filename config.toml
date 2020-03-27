@@ -34,14 +34,14 @@ googleAnalytics = "UA-161504385-2"
   name = "Portfolio"
   url = "https://www.strayturtle.dev/"
   image = "https://blog.strayturtle.dev/apple-touch-icon.png"
-  description = ""
+  description = "このサイトです。AMP Storiesを使って制作しました。"
   usedSkills = ["HTML5", "CSS3", "AMP Stories", "Hugo"]
 
 [[params.projects]]
   name = "Blog"
   url = "https://blog.strayturtle.dev/"
   image = "https://blog.strayturtle.dev/apple-touch-icon.png"
-  description = ""
+  description = "Web系の技術記事を公開しています。"
   usedSkills = ["HTML5", "CSS3", "AMP", "Hugo"]
 
 [[params.contact]]
