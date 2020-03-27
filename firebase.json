@@ -4,7 +4,7 @@
     "ignore": [ "firebase.json", "**/.*", "**/node_modules/**", "**/Thumbs.db" ],
     "headers": [
       {
-        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "source": "**/*.@(jpg|jpeg|webp|gif|png)",
         "headers": [
           {
             "key": "Cache-Control",

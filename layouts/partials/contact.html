@@ -1,6 +1,10 @@
 <amp-story-page id="contact">
   <amp-story-grid-layer template="fill">
-    <amp-img class="overlay" src="{{ "assets/contact.jpg" | absURL }}" alt="" width="1280" height="853" layout="responsive">
+    <amp-img class="overlay" src="{{ "assets/contact.webp" | absURL }}" alt=""
+        width="1280" height="853" layout="responsive">
+      <amp-img fallback class="overlay" src="{{ "assets/contact.jpg" | absURL }}" alt=""
+        width="1280" height="853" layout="responsive">
+      </amp-img>
     </amp-img>
   </amp-story-grid-layer>
   <amp-story-grid-layer template="vertical">

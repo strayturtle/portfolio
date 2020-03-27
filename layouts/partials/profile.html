@@ -1,6 +1,11 @@
 <amp-story-page id="profile">
   <amp-story-grid-layer template="fill">
-    <amp-img src="{{ "assets/profile.jpg" | absURL }}" class="overlay" alt="" width="1280" height="1920" layout="responsive" animate-in="pan-left" animate-in-duration="10s">
+    <amp-img class="overlay" src="{{ "assets/profile.webp" | absURL }}" alt=""
+        width="1280" height="1920" layout="responsive"
+        animate-in="pan-left" animate-in-duration="10s">
+      <amp-img fallback class="overlay" src="{{ "assets/profile.jpg" | absURL }}" alt=""
+          width="1280" height="1920" layout="responsive">
+      </amp-img>
     </amp-img>
   </amp-story-grid-layer>
   <amp-story-grid-layer template="vertical">
