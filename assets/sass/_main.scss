@@ -49,7 +49,7 @@ amp-story-grid-layer.center {
 
 .card {
   text-align: center;
-  padding: 1rem;
+  padding: .5rem;
   width: 50%;
 
   &_inner {
@@ -60,6 +60,31 @@ amp-story-grid-layer.center {
 
   &_title {
     margin-bottom: .5rem;
+  }
+}
+
+.skillRating {
+  &_itemWrapper {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+
+    &::before {
+      color: #ccc;
+      content: "★★★★★";
+    }
+  }
+
+  &_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    &::after {
+      color: #ffcc33;
+      content: "★★★★★";
+    }
   }
 }
 

@@ -17,18 +17,23 @@ googleAnalytics = "UA-161504385-2"
 
 [[params.skills]]
   name = "HTML5"
+  rating = 5
 
 [[params.skills]]
   name = "CSS3"
+  rating = 4.5
 
 [[params.skills]]
   name = "JavaScript"
+  rating = 3
 
 [[params.skills]]
   name = "Hugo"
+  rating = 4
 
 [[params.skills]]
   name = "PHP"
+  rating = 1.5
 
 [[params.projects]]
   name = "Portfolio"
