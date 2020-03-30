@@ -150,7 +150,8 @@ amp-story-grid-layer.center {
   }
 
   &_usedSkill + &_usedSkill::before {
-    content: ", ";
+    content: ",";
+    margin-right: .2rem;
   }
 }
 
