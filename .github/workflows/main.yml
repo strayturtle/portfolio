@@ -52,11 +52,6 @@ jobs:
         with:
           name: public
 
-      - name: Optimize AMP
-        uses: asurbernardo/amp-optimizer-action@1.0.2
-        with:
-          root: './public'
-
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
