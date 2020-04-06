@@ -4,24 +4,7 @@
   {
     "vars": { "account": {{ .Site.GoogleAnalytics }} },
     "triggers": {
-      "storyPageVisible": {
-        "on": "story-page-visible",
-        "vars": {
-          "event_name": "amp_stories",
-          "event_category": "story_progress",
-          "event_action": "${title}",
-          "event_label": "${storyPageId}"
-        }
-      },
-      "storyEnd": {
-        "on": "story-last-page-visible",
-        "vars": {
-          "event_name": "amp_stories",
-          "event_category": "story_complete",
-          "event_action": "${title}",
-          "event_label": "bookend"
-        }
-      }
+      "trackPageview": { "on": "visible", "request": "pageview" }
     }
   }
   </script>
