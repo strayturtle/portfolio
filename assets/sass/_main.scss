@@ -1,5 +1,9 @@
 amp-story-page {
-  background: linear-gradient(0deg, $color_primary, adjust-hue($color_primary, 80%));
+  background: linear-gradient(
+    0deg,
+    $color_primary,
+    adjust-hue($color_primary, 80%)
+  );
 }
 
 amp-story-page-attachment p {
@@ -29,16 +33,16 @@ amp-story-grid-layer.center {
 }
 
 .overlay {
-  filter: opacity(.2);
+  filter: opacity(0.2);
 }
 
 .title {
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 2rem;
 }
 
 .subtitle {
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 1rem;
 }
 
@@ -49,17 +53,17 @@ amp-story-grid-layer.center {
 
 .card {
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 50%;
 
   &_inner {
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 14px;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.1);
   }
 
   &_title {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .icon {
@@ -92,7 +96,7 @@ amp-story-grid-layer.center {
     overflow: hidden;
 
     &::after {
-      color: #ffcc33;
+      color: #fc3;
       content: "★★★★★";
     }
   }
@@ -107,7 +111,7 @@ amp-story-grid-layer.center {
 
 .project {
   width: 50%;
-  padding: .5rem;
+  padding: 0.5rem;
   color: #fff;
 
   @include media_max {
@@ -120,7 +124,7 @@ amp-story-grid-layer.center {
     width: 100%;
     height: 100%;
     border-radius: 14px;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.1);
   }
 
   &_body {
@@ -130,19 +134,19 @@ amp-story-grid-layer.center {
   }
 
   &_description {
-    margin-top: .5rem;
-    font-size: .8rem;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
   }
 
   &_host {
-    color: rgba(255, 255, 255, .6);
-    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
     margin-top: auto;
   }
 
   &_usedSkills {
-    margin: .5rem 0;
-    font-size: .7rem;
+    margin: 0.5rem 0;
+    font-size: 0.7rem;
 
     &_title {
       font-size: 0.7rem;
@@ -151,7 +155,7 @@ amp-story-grid-layer.center {
 
   &_usedSkill + &_usedSkill::before {
     content: ",";
-    margin-right: .2rem;
+    margin-right: 0.2rem;
   }
 }
 
@@ -164,11 +168,11 @@ amp-story-grid-layer.center {
     flex: 1 1 100%;
     flex-direction: column;
     justify-content: space-between;
-    padding: .5rem;
+    padding: 0.5rem;
     color: #fff;
 
     &:hover {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 }
