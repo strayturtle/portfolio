@@ -1,6 +1,6 @@
 {
   "bookendVersion": "v1.0",
-  "shareProviders": [ "email", "twitter" ],
+  "shareProviders": [ "email", "twitter", "line" ],
   "components": [
     {{ with .Site.Params.projects }}
     {
