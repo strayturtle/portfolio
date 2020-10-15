@@ -1,6 +1,6 @@
 languageCode = "ja"
 hasCJKLanguage = true
-baseurl = "https://www.strayturtle.dev/"
+baseurl = "https://strayturtle.github.io/portfolio/"
 title = "Portfolio - Stray Turtle"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 googleAnalytics = "UA-161504385-2"
@@ -35,12 +35,12 @@ googleAnalytics = "UA-161504385-2"
   name = "PHP"
   rating = 1.5
 
-[[params.projects]]
-  name = "Portfolio"
-  url = "https://www.strayturtle.dev/"
-  image = ""
-  description = "このサイトです。"
-  usedSkills = ["HTML5", "CSS3", "AMP Stories", "Hugo"]
+# [[params.projects]]
+#   name = "Portfolio"
+#   url = "https://www.strayturtle.dev/"
+#   image = ""
+#   description = "このサイトです。"
+#   usedSkills = ["HTML5", "CSS3", "AMP Stories", "Hugo"]
 
 [[params.projects]]
   name = "Blog"
