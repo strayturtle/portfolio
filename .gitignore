@@ -1,7 +1,6 @@
 # Project only
 public/
 resources/
-.firebase/
 
 # Node.js
 
