@@ -1,10 +1,12 @@
 {{ if and (.Site.GoogleAnalytics) (not .Site.IsServer) }}
-<amp-analytics type="googleanalytics" id="analytics1">
+<amp-analytics type="gtag" data-credentials="include">
   <script type="application/json">
   {
-    "vars": { "account": {{ .Site.GoogleAnalytics }} },
-    "triggers": {
-      "trackPageview": { "on": "visible", "request": "pageview" }
+    "vars" : {
+      "gtag_id": "{{ .Site.GoogleAnalytics }}",
+      "config" : {
+        "{{ .Site.GoogleAnalytics }}": { "groups": "default" }
+      }
     }
   }
   </script>
