@@ -3,7 +3,7 @@ hasCJKLanguage = true
 baseurl = "https://strayturtle.github.io/portfolio/"
 title = "Portfolio - Stray Turtle"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
-googleAnalytics = "UA-161504385-2"
+googleAnalytics = "G-1124SDQZW3"
 
 [params]
   description = "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです。AMP Storiesで制作しました。"
