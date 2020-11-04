@@ -8,6 +8,27 @@
       "config" : {
         "{{ . }}": { "groups": "default" }
       }
+    },
+    "triggers": {
+      "storyProgress": {
+        "on": "story-page-visible",
+        "vars": {
+          "event_name": "custom",
+          "event_action": "story_progress",
+          "event_category": "${title}",
+          "event_label": "${storyPageId}",
+          "send_to": ["{{ . }}"]
+        }
+      },
+      "storyEnd": {
+        "on": "story-last-page-visible",
+        "vars": {
+          "event_name": "custom",
+          "event_action": "story_complete",
+          "event_category": "${title}",
+          "send_to": ["{{ . }}"]
+        }
+      }
     }
   }
   </script>
