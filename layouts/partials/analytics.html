@@ -1,14 +1,16 @@
-{{ if and (.Site.GoogleAnalytics) (not .Site.IsServer) }}
+{{ if not .Site.IsServer }}
+{{ with .Site.GoogleAnalytics }}
 <amp-analytics type="gtag" data-credentials="include">
   <script type="application/json">
   {
     "vars" : {
-      "gtag_id": "{{ .Site.GoogleAnalytics }}",
+      "gtag_id": "{{ . }}",
       "config" : {
-        "{{ .Site.GoogleAnalytics }}": { "groups": "default" }
+        "{{ . }}": { "groups": "default" }
       }
     }
   }
   </script>
 </amp-analytics>
+{{ end }}
 {{ end }}
