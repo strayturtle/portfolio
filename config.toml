@@ -6,7 +6,7 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 googleAnalytics = "UA-161504385-2"
 
 [params]
-  description = "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです。AMP Storiesで制作しました。"
+  description = "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです。Web Storiesで制作しました。"
   images = ["logo.png"]
   faviocn = ""
 
@@ -40,7 +40,7 @@ googleAnalytics = "UA-161504385-2"
 #   url = "https://www.strayturtle.dev/"
 #   image = ""
 #   description = "このサイトです。"
-#   usedSkills = ["HTML5", "CSS3", "AMP Stories", "Hugo"]
+#   usedSkills = ["HTML5", "CSS3", "Web Stories", "Hugo"]
 
 [[params.projects]]
   name = "Blog"

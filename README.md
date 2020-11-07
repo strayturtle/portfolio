@@ -1,4 +1,4 @@
-# What is this.
+# What is this
 
 [Strayturtle](https://github.com/strayturtle)'s story-like portfolio site.  
 Color theme that is conscious of eco and technology.
@@ -7,5 +7,5 @@ Color theme that is conscious of eco and technology.
 
 - HTML5
 - CSS3 / SCSS
-- [AMP Stories](https://amp.dev/ja/about/stories/)
+- [Web Stories](https://amp.dev/ja/about/stories/)
 - [Hugo](https://gohugo.io/)
