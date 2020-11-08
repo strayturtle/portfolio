@@ -5,8 +5,8 @@
   "name": "{{ .Site.Title | safeJS }}",
   "headline": "{{ .Site.Title | safeJS }}",
   "description": "{{ .Site.Params.description | safeJS }}",
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04JST" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04JST" }}",
+  "datePublished": "{{ dateFormat "2006-01-02T15:04JST" .Site.Params.datePublished }}",
+  "dateModified": "{{ now.Format "2006-01-02T15:04JST" }}",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"

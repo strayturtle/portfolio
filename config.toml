@@ -7,6 +7,7 @@ googleAnalytics = "UA-161504385-2"
 
 [params]
   description = "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです。Web Storiesで制作しました。"
+  datePublished = "2020-03-14T12:00:00+09:00"
   images = ["logo.png"]
   faviocn = ""
 
