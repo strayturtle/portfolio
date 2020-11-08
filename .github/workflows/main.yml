@@ -32,7 +32,9 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --gc
+        run: hugo --gc --minify --cleanDestinationDir
+        env:
+          TZ: "Asia/Tokyo"
 
       - name: Save public dir
         uses: actions/upload-artifact@v1
@@ -57,8 +59,10 @@ jobs:
         with:
           root: "./public"
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to hosting
         uses: peaceiris/actions-gh-pages@v3
+        env:
+          TZ: "Asia/Tokyo"
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
