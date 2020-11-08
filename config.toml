@@ -2,7 +2,7 @@ languageCode = "ja"
 hasCJKLanguage = true
 baseurl = "https://strayturtle.github.io/portfolio/"
 title = "Portfolio - Stray Turtle"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
+disableKinds = ["page", "section", "taxonomy", "term", "RSS"]
 googleAnalytics = "UA-161504385-2"
 
 [params]
@@ -64,4 +64,4 @@ googleAnalytics = "UA-161504385-2"
   mediaType = "application/json"
 
 [outputs]
-  home = ["HTML", "RSS", "Bookend"]
+  home = ["HTML", "Bookend"]
