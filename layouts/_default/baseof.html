@@ -36,7 +36,7 @@
   {{ else }}
   <style amp-custom>
     {{ $option := (dict "outputStyle" "compressed") }}
-    {{ $css := resources.Get $scssPath | toCSS $option | postCSS (dict "use" "autoprefixer") }}
+    {{ $css := resources.Get $scssPath | toCSS $option }}
     {{ $css.Content | safeCSS }}
   </style>
   {{ end }}
