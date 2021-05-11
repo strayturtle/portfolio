@@ -1,7 +1,4 @@
-# What is this
-
 [Strayturtle](https://github.com/strayturtle)'s story-like portfolio site.  
-Color theme that is conscious of eco and technology.
 
 ## Technologies used
 
