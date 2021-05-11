@@ -2,7 +2,8 @@
   "private": true,
   "author": "Stray Turtle",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "hugo server --minify --watch -D -F",
+    "build": "hugo --minify --gc --cleanDestinationDir",
   },
   "license": "MIT",
   "dependencies": {},
