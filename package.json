@@ -3,9 +3,12 @@
   "author": "Stray Turtle",
   "scripts": {
     "dev": "hugo server --minify --watch -D -F",
-    "build": "hugo --minify --gc --cleanDestinationDir",
+    "build": "hugo --minify --gc --cleanDestinationDir"
   },
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15"
+  }
 }
