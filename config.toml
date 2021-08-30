@@ -6,62 +6,50 @@ disableKinds = ["page", "section", "taxonomy", "term", "RSS"]
 googleAnalytics = "UA-161504385-2"
 
 [params]
-  description = "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです。Web Storiesで制作しました。"
-  datePublished = "2020-03-14T12:00:00+09:00"
-  images = ["logo.png"]
-  faviocn = ""
+description = "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです。Web Storiesで制作しました。"
+datePublished = "2020-03-14T12:00:00+09:00"
+images = ["logo.png"]
+faviocn = ""
 
 [params.author]
-  name = "Stray Turtle"
-  location = "Japan"
-  email = "https://forms.gle/6Rb9NHgWFd9VGiJF9"
+name = "Stray Turtle"
+location = "Japan"
+email = "https://forms.gle/6Rb9NHgWFd9VGiJF9"
 
 [[params.skills]]
-  name = "HTML5"
-  rating = 5
+name = "HTML5"
+rating = 5
 
 [[params.skills]]
-  name = "CSS3"
-  rating = 4.5
+name = "CSS3"
+rating = 4.5
 
 [[params.skills]]
-  name = "JavaScript"
-  rating = 3
+name = "JavaScript"
+rating = 3
 
 [[params.skills]]
-  name = "Hugo"
-  rating = 4
+name = "Hugo"
+rating = 4
 
 [[params.skills]]
-  name = "PHP"
-  rating = 1.5
-
-# [[params.projects]]
-#   name = "Portfolio"
-#   url = "https://www.strayturtle.dev/"
-#   image = ""
-#   description = "このサイトです。"
-#   usedSkills = ["HTML5", "CSS3", "Web Stories", "Hugo"]
+name = "PHP"
+rating = 1.5
 
 [[params.projects]]
-  name = "Blog"
-  url = "https://blog.strayturtle.dev/"
-  image = "https://blog.strayturtle.dev/apple-touch-icon.png"
-  description = "Web系の技術記事を公開しています。"
-  usedSkills = ["HTML5", "CSS3", "AMP", "Hugo"]
+name = "Portfolio"
+url = "https://strayturtle.github.io/portfolio/"
+image = ""
+description = "このサイトです。"
+usedSkills = ["HTML5", "CSS3", "Web Stories", "Hugo"]
 
 [[params.contact]]
-  name = "Twitter"
-  url = "https://twitter.com/strayturtle13"
+name = "Twitter"
+url = "https://twitter.com/strayturtle13"
 
 [[params.contact]]
-  name = "GitHub"
-  url = "https://github.com/strayturtle"
-
-[outputFormats.Bookend]
-  baseName = "bookend"
-  isPlainText = true
-  mediaType = "application/json"
+name = "GitHub"
+url = "https://github.com/strayturtle"
 
 [outputs]
-  home = ["HTML", "Bookend"]
+home = ["HTML"]

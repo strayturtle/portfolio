@@ -6,13 +6,20 @@
     poster-portrait-src="{{ "assets/cover.jpg" | absURL }}">
 
   {{ partial "analytics" . }}
-  {{ partial "cover.html" . }}
-  {{ partial "profile.html" . }}
-  {{ partial "private.html" . }}
-  {{ partial "skills.html" . }}
-  {{ partial "projects.html" . }}
-  {{ partial "contact.html" . }}
+  {{ partial "pages/cover.html" . }}
+  {{ partial "pages/profile.html" . }}
+  {{ partial "pages/private.html" . }}
+  {{ partial "pages/skills.html" . }}
+  {{ partial "pages/projects.html" . }}
+  {{ partial "pages/contact.html" . }}
 
-  <amp-story-bookend src="{{ "bookend.json" | absURL }}" layout="nodisplay"></amp-story-bookend>
+  <amp-story-social-share>
+    <script type="application/json">
+      {
+        "bookendVersion":"v1.0",
+        "shareProviders": [ "email", "twitter", "line" ],
+      }
+    </script>
+  </amp-story-social-share>
 </amp-story>
 {{ end }}
