@@ -3,7 +3,6 @@ title: "Portfolio - Stray Turtle"
 languageCode: "ja"
 hasCJKLanguage: true
 disableKinds: ["page", "section", "taxonomy", "term", "RSS"]
-googleAnalytics: "UA-161504385-2"
 
 params:
   description: "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです"
