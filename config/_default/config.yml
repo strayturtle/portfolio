@@ -2,12 +2,13 @@ baseurl: "https://strayturtle.github.io/portfolio/"
 title: "Portfolio - Stray Turtle"
 languageCode: "ja"
 hasCJKLanguage: true
+relativeURLs: true
 disableKinds: ["page", "section", "taxonomy", "term", "RSS"]
 
 params:
   description: "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです"
   datePublished: "2020-03-14T12:00:00+09:00"
-  images: ["logo.png"]
+  images: ["/logo.png"]
   favicon: ""
 
   author:
