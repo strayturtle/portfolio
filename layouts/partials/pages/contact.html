@@ -1,9 +1,18 @@
 <amp-story-page id="contact">
   <amp-story-grid-layer template="fill">
-    <amp-img class="overlay" src="{{ "assets/contact.webp" | absURL }}" alt=""
-        width="1280" height="853" layout="responsive">
-      <amp-img fallback class="overlay" src="{{ "assets/contact.jpg" | absURL }}" alt=""
-        width="1280" height="853" layout="responsive">
+    <amp-img
+        class="overlay"
+        src="{{ "/assets/contact.webp" }}"
+        alt=""
+        width="1280" height="853"
+        layout="responsive">
+      <amp-img
+          fallback
+          class="overlay"
+          src="{{ "/assets/contact.jpg" }}"
+          alt=""
+          width="1280" height="853"
+          layout="responsive">
       </amp-img>
     </amp-img>
   </amp-story-grid-layer>
@@ -30,7 +39,7 @@
       {{ $svgPath := ($name | lower) | printf "svg/%s.svg" }}
       {{ with resources.Get $svgPath }}
       <li>
-        <a href="{{ $url | absURL }}" title="{{ $.Site.Params.author.name }}の{{ $name }}" target="_blank" rel="noopenner noreferrer">
+        <a href="{{ $url }}" title="{{ $.Site.Params.author.name }}の{{ $name }}" target="_blank" rel="noopenner noreferrer">
           {{ .Content | safeHTML }}
           <span>{{ $name }}</span>
         </a>

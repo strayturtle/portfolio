@@ -1,10 +1,20 @@
 <amp-story-page id="private">
   <amp-story-grid-layer template="fill">
-    <amp-img class="overlay" src="{{ "assets/private.webp" | absURL }}" alt=""
-        width="1280" height="1805" layout="responsive"
-        animate-in="pan-right" animate-in-duration="10s">
-      <amp-img fallback class="overlay" src="{{ "assets/private.jpg" | absURL }}" alt=""
-          width="1280" height="1805" layout="responsive">
+    <amp-img
+        class="overlay"
+        src="{{ "/assets/private.webp" }}"
+        alt=""
+        width="1280" height="1805"
+        layout="responsive"
+        animate-in="pan-right"
+        animate-in-duration="10s">
+      <amp-img
+          fallback
+          class="overlay"
+          src="{{ "/assets/private.jpg" }}"
+          alt=""
+          width="1280" height="1805"
+          layout="responsive">
       </amp-img>
     </amp-img>
   </amp-story-grid-layer>

@@ -14,8 +14,8 @@
   <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="pinterest" content="nopin">
   <meta name="theme-color" content="#5cad5c">
-  <link rel="icon" href="{{ (.Site.Params.favicon | default "favicon.ico") | absURL }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | absURL }}">
+  <link rel="icon" href="{{ (.Site.Params.favicon | default "/favicon.ico") }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" }}">
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400;700&display=swap">
   {{ hugo.Generator }}
