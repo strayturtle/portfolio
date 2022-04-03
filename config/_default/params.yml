@@ -1,0 +1,39 @@
+description: "主にプロフィールとWeb制作のスキルを紹介するポートフォリオです"
+datePublished: "2020-03-14T12:00:00+09:00"
+images: ["/logo.png"]
+favicon: ""
+
+author:
+  name: "Stray Turtle"
+  location: "Japan"
+  email: "https://forms.gle/6Rb9NHgWFd9VGiJF9"
+
+skills:
+  - name: "HTML5"
+    rating: 5
+
+  - name: "CSS3"
+    rating: 4.5
+
+  - name: "JavaScript"
+    rating: 3
+
+  - name: "Hugo"
+    rating: 4
+
+  - name: "PHP"
+    rating: 1.5
+
+projects:
+  - name: "Portfolio"
+    url: "https://strayturtle.github.io/portfolio/"
+    image: ""
+    description: "このサイトです"
+    usedSkills: ["HTML5", "CSS3", "Web Stories", "Hugo"]
+
+contact:
+  - name: "Twitter"
+    url: "https://twitter.com/strayturtle13"
+
+  - name: "GitHub"
+    url: "https://github.com/strayturtle"
