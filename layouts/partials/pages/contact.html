@@ -1,50 +1,65 @@
 <amp-story-page id="contact">
   <amp-story-grid-layer template="fill">
     <amp-img
-        class="overlay"
-        src="{{ "/assets/contact.webp" }}"
-        alt=""
-        width="1280" height="853"
-        layout="responsive">
+      class="overlay"
+      src="{{ "/assets/contact.webp" }}"
+      alt=""
+      width="1280"
+      height="853"
+      layout="responsive"
+    >
       <amp-img
-          fallback
-          class="overlay"
-          src="{{ "/assets/contact.jpg" }}"
-          alt=""
-          width="1280" height="853"
-          layout="responsive">
-      </amp-img>
+        fallback
+        class="overlay"
+        src="{{ "/assets/contact.jpg" }}"
+        alt=""
+        width="1280"
+        height="853"
+        layout="responsive"
+      ></amp-img>
     </amp-img>
   </amp-story-grid-layer>
+
   <amp-story-grid-layer template="vertical">
     <h1 class="title">Contact</h1>
     <p>お気軽にお問い合わせください。</p>
   </amp-story-grid-layer>
+
   <amp-story-grid-layer template="vertical" class="center">
     <ul class="contactList wrapper">
       {{ with .Site.Params.author.email }}
-      <li>
-        <a href="{{ . }}" title="Googleフォームでお問い合わせ" target="_blank" rel="noopenner noreferrer">
-          {{ with resources.Get "svg/email.svg" }}
-          {{ .Content | safeHTML }}
-          {{ end }}
-          <span></span>
-        </a>
-      </li>
+        <li>
+          <a
+            href="{{ . }}"
+            title="Googleフォームでお問い合わせ"
+            target="_blank"
+            rel="noopenner noreferrer"
+          >
+            {{ with resources.Get "svg/email.svg" }}
+              {{ .Content | safeHTML }}
+            {{ end }}
+            <span>Email</span>
+          </a>
+        </li>
       {{ end }}
 
       {{ range .Site.Params.contact }}
-      {{ $name := .name }}
-      {{ $url := .url }}
-      {{ $svgPath := ($name | lower) | printf "svg/%s.svg" }}
-      {{ with resources.Get $svgPath }}
-      <li>
-        <a href="{{ $url }}" title="{{ $.Site.Params.author.name }}の{{ $name }}" target="_blank" rel="noopenner noreferrer">
-          {{ .Content | safeHTML }}
-          <span>{{ $name }}</span>
-        </a>
-      </li>
-      {{ end }}
+        {{ $name := .name }}
+        {{ $url := .url }}
+        {{ $svgPath := ($name | lower) | printf "svg/%s.svg" }}
+        {{ with resources.Get $svgPath }}
+          <li>
+            <a
+              href="{{ $url }}"
+              title="{{ $.Site.Params.author.name }} の {{ $name }}"
+              target="_blank"
+              rel="noopenner noreferrer"
+            >
+              {{ .Content | safeHTML }}
+              <span>{{ $name }}</span>
+            </a>
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
   </amp-story-grid-layer>

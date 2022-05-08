@@ -4,30 +4,38 @@
     <p>星は自信の度合いを表しています。</p>
     <div class="cardContainer">
       {{ range .Site.Params.skills }}
-      {{ $name := .name }}
-      {{ $svgPath := lower $name | printf "svg/%s.svg" }}
-      <div class="card">
-        <div class="card_inner">
-          <h2 class="card_title">{{ .name }}</h2>
-          {{ with resources.Get $svgPath }}
-          {{ .Content | safeHTML }}
-          {{ end }}
+        {{ $name := .name }}
+        {{ $svgPath := lower $name | printf "svg/%s.svg" }}
 
-          {{ with .rating }}
-          {{ $rating := . }}
-          {{ if and (ge $rating 0) (le $rating 5) }}
-          {{ $rating = mul $rating 20 }}
-          {{ else }}
-          {{ $rating = 0 }}
-          {{ end }}
-          <div class="skillRating">
-            <div class="skillRating_itemWrapper">
-              <div class="skillRating_item" style="width: {{ $rating }}%"></div>
-            </div>
+
+        <div class="card">
+          <div class="card_inner">
+            <h2 class="card_title">{{ .name }}</h2>
+
+            {{ with resources.Get $svgPath }}
+              {{ .Content | safeHTML }}
+            {{ end }}
+
+            {{ with .rating }}
+              {{ $rating := . }}
+              {{ if and (ge $rating 0) (le $rating 5) }}
+                {{ $rating = mul $rating 20 }}
+              {{ else }}
+                {{ $rating = 0 }}
+              {{ end }}
+
+
+              <div class="skillRating">
+                <div class="skillRating_itemWrapper">
+                  <div
+                    class="skillRating_item"
+                    style="width: {{ $rating }}%"
+                  ></div>
+                </div>
+              </div>
+            {{ end }}
           </div>
-          {{ end }}
         </div>
-      </div>
       {{ end }}
     </div>
   </amp-story-grid-layer>

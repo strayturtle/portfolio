@@ -4,28 +4,33 @@
     <p>管理できる範囲で増やしていきたいです。</p>
     <div class="projectsContainer">
       {{ range .Site.Params.projects }}
-      <a class="project" href="{{ .url }}" title="{{ .name }}"
-          target="_blank" rel="noopenner noreferrer">
-        <div class="project_inner">
-          <div class="project_body">
-            <h2 class="project_title">
-              {{ .name }}
-            </h2>
-            <p class="project_description">
-              {{ .description | safeHTML }}
-            </p>
-            <div class="project_usedSkills">
-              <h3 class="project_usedSkills_title">使用スキル</h3>
-              {{ range .usedSkills }}
-              <span class="project_usedSkill">{{ . }}</span>
-              {{ end }}
-            </div>
-            <div class="project_host">
-              {{ .url | replaceRE "^https?://([^/]+).*" "$1" }}
+        <a
+          class="project"
+          href="{{ .url }}"
+          title="{{ .name }}"
+          target="_blank"
+          rel="noopenner noreferrer"
+        >
+          <div class="project_inner">
+            <div class="project_body">
+              <h2 class="project_title">
+                {{ .name }}
+              </h2>
+              <p class="project_description">
+                {{ .description | safeHTML }}
+              </p>
+              <div class="project_usedSkills">
+                <h3 class="project_usedSkills_title">使用スキル</h3>
+                {{ range .usedSkills }}
+                  <span class="project_usedSkill">{{ . }}</span>
+                {{ end }}
+              </div>
+              <div class="project_host">
+                {{ .url | replaceRE "^https?://([^/]+).*" "$1" }}
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
       {{ end }}
     </div>
   </amp-story-grid-layer>

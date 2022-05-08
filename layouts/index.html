@@ -1,24 +1,26 @@
 {{ define "main" }}
-<amp-story standalone supports-landscape
+  <amp-story
+    standalone
+    supports-landscape
     title="{{ .Site.Title }}"
     publisher="{{ .Site.Params.author.name }}"
     publisher-logo-src="{{ index .Site.Params.images 0 }}"
-    poster-portrait-src="{{ "/assets/cover.webp" }}">
+    poster-portrait-src="{{ "/assets/cover.webp" }}"
+  >
+    {{ partial "pages/cover.html" . }}
+    {{ partial "pages/profile.html" . }}
+    {{ partial "pages/private.html" . }}
+    {{ partial "pages/skills.html" . }}
+    {{ partial "pages/projects.html" . }}
+    {{ partial "pages/contact.html" . }}
 
-  {{ partial "pages/cover.html" . }}
-  {{ partial "pages/profile.html" . }}
-  {{ partial "pages/private.html" . }}
-  {{ partial "pages/skills.html" . }}
-  {{ partial "pages/projects.html" . }}
-  {{ partial "pages/contact.html" . }}
-
-  <amp-story-social-share layout="nodisplay">
-    <script type="application/json">
-      {
-        "bookendVersion":"v1.0",
-        "shareProviders": [ "email", "twitter", "line" ],
-      }
-    </script>
-  </amp-story-social-share>
-</amp-story>
+    <amp-story-social-share layout="nodisplay">
+      <script type="application/json">
+        {
+          "bookendVersion": "v1.0",
+          "shareProviders": ["email", "twitter", "line"]
+        }
+      </script>
+    </amp-story-social-share>
+  </amp-story>
 {{ end }}

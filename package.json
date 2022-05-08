@@ -6,10 +6,11 @@
     "build": "hugo --minify --gc --cleanDestinationDir"
   },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.15",
-    "postcss-cli": "^8.3.1"
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-go-template": "^0.0.12"
   }
 }

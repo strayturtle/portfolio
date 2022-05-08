@@ -1,28 +1,35 @@
 <amp-story-page id="profile">
   <amp-story-grid-layer template="fill">
     <amp-img
-        class="overlay"
-        src="{{ "/assets/profile.webp" }}"
-        alt=""
-        width="1280" height="1920"
-        layout="responsive"
-        animate-in="pan-left"
-        animate-in-duration="10s">
+      class="overlay"
+      src="{{ "/assets/profile.webp" }}"
+      alt=""
+      width="1280"
+      height="1920"
+      layout="responsive"
+      animate-in="pan-left"
+      animate-in-duration="10s"
+    >
       <amp-img
-          fallback
-          class="overlay"
-          src="{{ "/assets/profile.jpg" }}"
-          alt=""
-          width="1280" height="1920"
-          layout="responsive">
+        fallback
+        class="overlay"
+        src="{{ "/assets/profile.jpg" }}"
+        alt=""
+        width="1280"
+        height="1920"
+        layout="responsive"
+      >
       </amp-img>
     </amp-img>
   </amp-story-grid-layer>
+
   <amp-story-grid-layer template="vertical">
     <h1 class="title">Profile</h1>
     <p>フロントエンドが好きな20代男性。</p>
-    <p>パソコンアドバイザー(自称)・Web制作</p>
-    <p>幼少の頃からPCやゲーム機などが好きで、特にPCを使ってインターネットで情報収集をして問題を解決することが得意。</p>
+    <p>パソコンアドバイザー（自称）・Web制作</p>
+    <p>
+      幼少の頃からPCやゲーム機などが好きで、とくにPCを使ってインターネットで情報収集をして問題を解決することが得意。
+    </p>
     <p>現在、パソコン関係の職種に就くことを目指している。</p>
   </amp-story-grid-layer>
 </amp-story-page>

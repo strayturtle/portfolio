@@ -1,32 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ⚡ {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>{{ .Site.Title }}</title>
+    <meta
+      name="description"
+      content="{{ .Site.Params.description | safeHTML }}"
+    />
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1"
+    />
+    <link
+      rel="dns-prefetch preconnect"
+      href="https://cdn.ampproject.org"
+      crossorigin
+    />
+    <link
+      rel="dns-prefetch preconnect"
+      href="https://amp-error-reporting.appspot.com"
+      crossorigin
+    />
+    <link
+      rel="dns-prefetch preconnect"
+      href="https://www.google-analytics.com"
+      crossorigin
+    />
+    <link
+      rel="dns-prefetch preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <meta name="pinterest" content="nopin" />
+    <meta name="theme-color" content="#5cad5c" />
+    <link
+      rel="icon"
+      href="{{ (.Site.Params.favicon | default "/favicon.ico") }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ "/apple-touch-icon.png" }}"
+    />
+    <script
+      async
+      custom-element="amp-story"
+      src="https://cdn.ampproject.org/v0/amp-story-1.0.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400;700&display=swap"
+    />
+    {{ hugo.Generator }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ partial "style.html" . }}
+    {{ partial "json_ld.html" . }}
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <title>{{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Site.Params.description | safeHTML }}">
-  <link rel="canonical" href="{{ .Permalink }}">
-  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-  <link rel="dns-prefetch preconnect" href="https://cdn.ampproject.org" crossorigin>
-  <link rel="dns-prefetch preconnect" href="https://amp-error-reporting.appspot.com" crossorigin>
-  <link rel="dns-prefetch preconnect" href="https://www.google-analytics.com" crossorigin>
-  <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta name="pinterest" content="nopin">
-  <meta name="theme-color" content="#5cad5c">
-  <link rel="icon" href="{{ (.Site.Params.favicon | default "/favicon.ico") }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" }}">
-  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400;700&display=swap">
-  {{ hugo.Generator }}
-  {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
-  {{ partial "style.html" . }}
-  {{ partial "json_ld.html" . }}
-</head>
-
-<body>
-  {{ block "main" . }}{{ end }}
-</body>
-
+  <body>
+    {{ block "main" . }}{{ end }}
+  </body>
 </html>

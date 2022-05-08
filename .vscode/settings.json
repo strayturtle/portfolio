@@ -1,0 +1,6 @@
+{
+  "[html]": {
+    "editor.bracketPairColorization.enabled": false
+  },
+  "css.validate": false
+}

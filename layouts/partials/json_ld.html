@@ -1,28 +1,28 @@
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "{{ .Site.Title | safeJS }}",
-  "headline": "{{ .Site.Title | safeJS }}",
-  "description": "{{ .Site.Params.description | safeJS }}",
-  "datePublished": "{{ dateFormat "2006-01-02T15:04JST" .Site.Params.datePublished }}",
-  "dateModified": "{{ now.Format "2006-01-02T15:04JST" }}",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  },
-  "image": {
-    "@type": "ImageObject",
-    "name": "{{ .Site.Title | safeJS }}",
-    "url": "{{ index .Site.Params.images 0 | absURL }}",
-    "width": 1280,
-    "height": 720
-  },
-  {{ with .Site.Params.author }}
-  "author": {
-    "@type": "Person",
-    "name": "{{ .name | safeJS }}"
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": {{ .Site.Title }},
+    "headline": {{ .Site.Title }},
+    "description": {{ .Site.Params.description }},
+    "datePublished": {{ dateFormat "2006-01-02T15:04JST" }},
+    "dateModified": {{ now.Format "2006-01-02T15:04JST" }},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ .Permalink }}
+    },
+    "image": {
+      "@type": "ImageObject",
+      "name": {{ .Site.Title }},
+      "url": {{ index .Site.Params.images 0 | absURL }},
+      "width": 1280,
+      "height": 720
+    },
+    {{ with .Site.Params.author }}
+      "author": {
+        "@type": "Person",
+        "name": {{ .name }}
+      }
+    {{ end }}
   }
-  {{ end }}
-}
 </script>

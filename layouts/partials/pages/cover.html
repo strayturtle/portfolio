@@ -1,21 +1,26 @@
 <amp-story-page id="cover">
   <amp-story-grid-layer template="fill">
     <amp-img
-        class="overlay"
-        src="{{ "/assets/cover.webp" }}"
-        alt=""
-        width="1280" height="1780"
-        layout="responsive">
+      class="overlay"
+      src="{{ "/assets/cover.webp" }}"
+      alt=""
+      width="1280"
+      height="1780"
+      layout="responsive"
+    >
       <amp-img
-          fallback
-          class="overlay"
-          src="{{ "/assets/cover.jpg" }}"
-          alt=""
-          width="1280" height="1780"
-          layout="responsive">
+        fallback
+        class="overlay"
+        src="{{ "/assets/cover.jpg" }}"
+        alt=""
+        width="1280"
+        height="1780"
+        layout="responsive"
+      >
       </amp-img>
     </amp-img>
   </amp-story-grid-layer>
+
   <amp-story-grid-layer template="vertical" class="center">
     <h1 class="title" animate-in="fly-in-left" animate-in-delay="0.2s">
       {{ .Site.Title }}
