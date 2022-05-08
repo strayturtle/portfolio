@@ -5,7 +5,7 @@
     "name": {{ .Site.Title }},
     "headline": {{ .Site.Title }},
     "description": {{ .Site.Params.description }},
-    "datePublished": {{ dateFormat "2006-01-02T15:04JST" }},
+    "datePublished": {{ .Date.Format "2006-01-02T15:04JST" }},
     "dateModified": {{ now.Format "2006-01-02T15:04JST" }},
     "mainEntityOfPage": {
       "@type": "WebPage",
